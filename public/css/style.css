@@ -3,27 +3,61 @@
 	color: #000;
 }
 
-.header .remove-radius {
-	border-radius: 0;
+html, body {
+	height: 100%;
 }
 
-.header .header-title {
+.header {
+	background-color: rgb(24,180,237);
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.header .header-center {
 	text-align: center;
-	font-size: 30px;
+	vertical-align: 10px;
 }
 
-.header .header-title a {
-	color: #FFF;
+.header h2 {
+	font-size: 20px;
+	margin: 0;
+	line-height: 40px;
+	color: #fff;
 }
 
-.header .header-title a:hover {
-	text-decoration: none;
+.header .remove-padding {
+	padding: 0;
+	line-height: 40px;
+}
+
+.header .remove-padding span {
+	margin-left: 2px;
+	color: #776868;
+	font-size: 12px;
+}
+
+.content .search {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	margin-top: -110px;
 }
 
 .search-bar .row .fix-width-for-input {
-	width: 75%;
-	display: inline-block;
+	width: 100%;
 	vertical-align: -2px;
+	float: left;
+}
+
+.search-bar .btn-search-index {
+	position: absolute;
+	top: 0;
+	right: 5%;
+	border: 0;
+	background: none;
 }
 
 .content .logo {
@@ -130,4 +164,15 @@
 
 .content .result-detail .detail-shop .remove-table-margin {
 	margin: 0;
+}
+
+.content .result-detail-fix {
+	position: absolute;
+	top: 10%;
+}
+
+.content .search-result-fix {
+	width: 100%;
+	position: absolute;
+	top: 10%;
 }
